@@ -142,6 +142,10 @@ Then run:
 cd MedTrinity-25M
 bash ./scripts/med/llava3_med_eval_batch_vqa_rad.sh
 ```
+Here is the evaluation suite of VQA-RAD, PathVQA, and SLAKE.
+[https://huggingface.co/yunfeixie/MedTrinity-25M-evalsuite](https://huggingface.co/yunfeixie/MedTrinity-25M-evalsuite
+
+
 
 ---
 
