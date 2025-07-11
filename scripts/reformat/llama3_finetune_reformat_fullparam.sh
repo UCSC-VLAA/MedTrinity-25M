@@ -1,0 +1,24 @@
+#!/bin/bash
+torchrun --nnodes=1 --nproc_per_node=4 --master_port=25001 llama/train/finetune_llama3.py \
+    --deepspeed /data5/yunfei/LLaVA/scripts/zero3_llama.json \
+    --model_name_or_path ../Llama-3-8B-Instruct \
+    --data_path ../Reformat_VQA/VQAs/selected_samples_finetuning_newprompt.jsonl \
+    --bf16 True \
+    --output_dir ./llama3/Llama-3-8B-Instruct-reformat_full \
+    --num_train_epochs 3 \
+    --per_device_train_batch_size 4 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 8 \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 500 \
+    --save_total_limit 3 \
+    --learning_rate 2e-4 \
+    --group_by_length True \
+    --weight_decay 0. \
+    --warmup_ratio 0.03 \
+    --logging_steps 1 \
+    --model_max_length 8192 \
+    --lazy_preprocess True \
+    --gradient_checkpointing True \
+    --report_to wandb

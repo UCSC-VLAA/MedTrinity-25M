@@ -1,0 +1,3 @@
+[submodule "MultiMedEval"]
+	path = MultiMedEval
+	url = https://github.com/corentin-ryr/MultiMedEval.git

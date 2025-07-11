@@ -1,0 +1,13 @@
+{
+    "MNIST_Oct_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Path_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Blood_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Breast_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Derma_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_OrganC_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_OrganS_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Pneumonia_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Retina_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "MNIST_Tissue_dir" : "/home/ec2-user/disk/llava_med/Data/Med_MNIST",
+    "CBIS_DDSM_dir": "/home/ec2-user/disk/llava_med/Data/CBIS_DDSM"
+}
